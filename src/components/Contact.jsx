@@ -32,7 +32,7 @@ export default function Contact() {
         </div>
         <div className="contact-output">
           <span className="output-prefix">{'>'}</span>
-          <span className="output-text">Open for freelance work and collaborations.</span>
+          <span className="output-text">Open for work and collaborations.</span>
         </div>
         <div className="contact-line">
           <span className="prompt-symbol">$</span>
