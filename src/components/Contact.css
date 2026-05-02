@@ -1,0 +1,85 @@
+.contact-terminal {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 650px;
+}
+
+.contact-line {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.contact-line .prompt-symbol {
+  color: var(--teal);
+  margin-right: 8px;
+}
+
+.command {
+  color: var(--text);
+}
+
+.contact-output {
+  margin-bottom: 16px;
+  padding-left: 24px;
+  font-size: 14px;
+}
+
+.output-prefix {
+  color: var(--teal);
+  margin-right: 8px;
+}
+
+.output-text {
+  color: var(--text-dim);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0 24px;
+  padding-left: 24px;
+}
+
+.contact-link {
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.contact-link:hover {
+  border-color: var(--teal);
+  box-shadow: 0 0 15px var(--teal-glow);
+  text-shadow: none;
+}
+
+.link-label {
+  color: var(--teal);
+  font-weight: 700;
+  min-width: 100px;
+}
+
+.link-value {
+  color: var(--text-dim);
+}
+
+.contact-link:hover .link-value {
+  color: var(--text);
+}
+
+@media (max-width: 480px) {
+  .contact-terminal {
+    padding: 20px;
+  }
+
+  .link-label {
+    min-width: 70px;
+    font-size: 13px;
+  }
+}

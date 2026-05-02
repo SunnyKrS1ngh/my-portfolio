@@ -1,0 +1,132 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.terminal-window {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 650px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 255, 159, 0.05);
+}
+
+.terminal-header {
+  background: var(--bg-light);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f57; }
+.dot.yellow { background: #febc2e; }
+.dot.green { background: #28c840; }
+
+.terminal-title {
+  margin-left: auto;
+  color: var(--text-dim);
+  font-size: 12px;
+}
+
+.terminal-body {
+  padding: 24px;
+  min-height: 200px;
+}
+
+.terminal-line {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.prompt-symbol {
+  color: var(--teal);
+  margin-right: 8px;
+}
+
+.teal-text {
+  color: var(--teal);
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: var(--teal);
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--bg);
+  border: 2px solid var(--teal);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--teal);
+  text-shadow: none;
+  box-shadow: 0 0 20px var(--teal-glow);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--teal);
+  border: 2px solid var(--border);
+}
+
+.btn-outline:hover {
+  border-color: var(--teal);
+  text-shadow: none;
+  box-shadow: 0 0 20px var(--teal-glow);
+}
+
+@media (max-width: 640px) {
+  .terminal-body {
+    padding: 16px;
+  }
+
+  .terminal-line {
+    font-size: 12px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .btn {
+    text-align: center;
+  }
+}

@@ -1,0 +1,64 @@
+.app {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.app.loaded {
+  opacity: 1;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 24px;
+  color: var(--text-dim);
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-header .prompt {
+  color: var(--teal);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text);
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '_';
+  animation: blink 1s step-end infinite;
+  color: var(--teal);
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+
+  .section-header h2 {
+    font-size: 22px;
+  }
+}
