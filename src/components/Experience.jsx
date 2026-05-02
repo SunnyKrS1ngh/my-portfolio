@@ -1,7 +1,7 @@
 import './Experience.css'
 
 const experience = {
-  company: 'LTIMindtree',
+  company: 'LTM',
   location: 'Bengaluru',
   phases: [
     {
